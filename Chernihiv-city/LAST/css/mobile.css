@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* CSS Document */
+body,html {
+	background:url(../images/fon-mobile.jpg) no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+}
+                                         
+.margin-munis{
+	margin-top: 0;
+}
+
+.button.blue{
+	margin: 40px 0 40px 0 !important;
+}
+    
+#bg1, #bg2 {
+	display: none;
+}
+
+#logo{
+    width: 100%;
+}
+
+.section .strategy-data{
+    margin: 200px auto 50px auto;
+}
+
+.customNavigation{
+    display: none;
+}
+
+#section0{
+    padding: 5% 0;
+}
+	
+#section4{
+	//overflow:hidden;
+}
+	
+#section7{
+	vertical-align:top;
+	background: #ffffff;
+}
+	
+#name-1,	
+#name-2,
+#name-3,
+#name-4,
+#name-5,
+#name-6{
+	position: relative;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	}
+
+#bg3-1, #bg3-2, #cloud-bg-3, 
+#bg4, #cloud-bg-4, #bg5-1,
+#bg5-2, #cloud-bg-5, #bg6, #cloud-bg-6{
+	display:none;
+	}
+	
+#seventh-slide{
+	width: 100% !important;
+	padding: 0 30px; 
+	}
+    
+/*#seventh-slide #our-team{
+    display: none;
+}
+
+#seventh-slide #our-team .customNavigation{
+    display: none;
+}
+*/
+	
+#cloud-1{
+	display: none;
+	position: relative;
+	z-index:0;
+	margin-top: 10%;
+	margin-left: 0px;
+	}
+	
+#cloud-2{
+	display: none;
+	position:absolute;
+	top: 25%;
+	right: 0%;
+	}
+
+#cloud-3{
+	display: none;	position:absolute;
+	top: 15%;
+	right: 5%;
+	}
+	
+#cloud-4{
+	display: none;	position:absolute;
+	top: 15%;
+	right: 0%;
+	}
+	
+#cloud-5{
+	display: none;	position:absolute;
+	top: 10%;
+	right: 0%;
+	}
+	
+#cloud-6{
+	display: none;	position:absolute;
+	top: 40%;
+	right: 35%;
+	}
+	
+#cloud-7{
+	display: none;	position:absolute;
+	top: 10%;
+	left: 0%;
+	}
+	
+#cloud-8{
+	display: none;	position:absolute;
+	top: 10%;
+	left: 25%;
+	}
+	
+#cloud-9{
+	position:absolute;
+	display: none;	top: 25%;
+	left: 0%;
+	}
+	
+#bird-1{
+	display: none;	position:absolute;
+	top: 45%;
+	right: 10%;
+	}
+	
+#bird-2{
+	position:absolute;
+	display: none;	top: 5%;
+	right: 10%;
+	}
+	
+#bird-3{
+	position:absolute;
+	display: none;	top: 25%;
+	left: 20%;
+	}
+	
+#bird-4{
+	position:absolute;
+	display: none;	top: 5%;
+	right: 5%;
+	}
+	
+

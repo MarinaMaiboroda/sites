@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+
+#magazine{
+	//max-width: 692px;
+	//margin:auto;
+	height: 519px;
+	}
+	
+#flipbook{
+	margin-top: 20px;
+	}
+	
+.game{
+	position:relative;
+	top: 175px;
+	}
+	
+.tution{
+	margin-bottom: 10px;
+	}
+	
+.game h3{
+	font-family: GothamBlack;
+	font-size: 24px;
+	margin: 0px 0 15px 14px;
+	color: #fff;
+	text-shadow: #d31145 2px 0px, #d31145 2px 2px, #d31145 0px 2px, #d31145 -2px 2px, #d31145 -2px 0px, #d31145 -2px -2px, #d31145 0px -2px, #d31145 2px -2px, #d31145 0 0 4px, #d31145 0 0 4px, #d31145 0 0 4px, #d31145 0 0 4px, #d31145 0 0 4px, #d31145 0 0 4px, #d31145 0 0 4px, #d31145 0 0 4px;
+	} 
+	
+.game ol{
+	margin-left: 0px;
+	padding-left: 20px;
+	font-family: HelveticaNeue;
+	}
+	
+.game ol li{
+	margin: 3px 0;
+	line-height: 1.3em;
+	}
+	
+.game ul{
+	margin-left: 0px;
+	padding-left: 15px;
+	font-family: HelveticaNeue;
+	}
+	
+.game .grey-fon p{
+	font-family: HelveticaNeue;
+	font-size: 14px;
+	line-height: 1.3em;
+	}
+	
+	
+.game .col-md-3,
+.game .col-lg-3{
+	padding-right: 0px; 
+	padding-left: 4px;
+	width: 220px;
+	}
+	
+.game .col-md-9,
+.game .col-lg-9{
+	padding-right: 0px; 
+	padding-left: 0px;
+	}
+ 	
+.even{
+	background:url(../img/notepad2.png) no-repeat;
+	width: 100%;
+	height:auto;
+	}
+
+.odd{
+	background: url(../img/notepad3.png) no-repeat;
+	}
+	
+.scratchpad{
+    width: 106px;
+    height: 82px;
+	margin: 20px 0;
+   }
+   
+.hard.titul.odd{
+	background:url(../img/first1.png) no-repeat;
+	//width: 417px !important;
+	//height: 520px !important;
+	}
+
+.lottery{
+	padding-top:15px;
+	}
+	
+.lottery img{
+	margin:auto;
+	}
+	
+.game .col-lg-9,
+.game .col-md-9,
+.game .col-sm-9{
+	padding: 0 !important;
+	}
+	
+.game .col-lg-9,
+.game .col-md-9{
+	height: 535px !important;
+	}	
+	
+.total{
+	 font-family: annie-btn;
+	 font-size: 24px;
+	 color: #d31145;
+	 }
+	 
+.tbl{
+	display: table;
+	margin: 30px auto 40px auto;
+	}
+	
+.tbl span{
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1em;
+	}	
+	
+.number{
+	 font-family: Gotham-Ultra;
+	 font-size: 30px;
+	 color: #fff;
+	 background: #000;
+	 padding: 10px;
+	 } 
+
+/*mobile version*/	
+.mobile{
+	background:url(../img/phone-fon.jpg);
+	 -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+	}
+	
+.mobile-notepad{
+	position: absolute;
+	top: 0px;
+	z-index: 0;
+	}
+	
+.notepad{
+	margin-top: 5%;
+}
+
+.match{
+	margin: auto;
+	}
+	
+@media (max-width: 800px) {
+	.scratchpad{
+   		width: 76px;
+    	height: 59px;
+		margin: 15px 0;
+   }
+   .notepad{
+		margin-top: 3%;
+	}
+	.tution{
+	margin-bottom: 0px;
+	}
+	.tbl{
+		margin:0;
+		}
+	.total{
+		font-size: 20px;}
+	}
+
+@media (max-width: 610px) {
+	.scratchpad{
+   		width: 46px;
+    	height: 36px;
+		margin: 10px 0;
+   }

@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Texas Water Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="css/responsive-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css" type="text/css"/>
+<link rel="stylesheet" href="owl-carousel/owl.theme.css" type="text/css"/>
+<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+	
+//Set default open/close settings
+$('.acc_container').hide(); //Hide/close all containers
+$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+ 
+//On Click
+$('.acc_trigger').click(function(){
+	if( $(this).next().is(':hidden') ) { //If immediate next container is closed...
+		$('.acc_trigger').removeClass('active').next().slideUp(); //Remove all .acc_trigger classes and slide up the immediate next container
+		$(this).toggleClass('active').next().slideDown(); //Add .acc_trigger class to clicked trigger and slide down the immediate next container
+	}
+	return false; //Prevent the browser jump to the link anchor
+});
+   $(document).ready(function() {
+	  var post = $("#casual-posts");
+	  var product = $("#casual-product");
+
+      post.owlCarousel({
+	  	items : 3, //10 items above 1000px browser width
+      	itemsDesktop : [1000,3], //5 items between 1000px and 901px
+      	itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+      	itemsTablet: [600,2], //2 items between 600 and 0;
+      	itemsMobile : [450, 1]// itemsMobile disabled - inherit from itemsTablet option
+      });
+	  
+	   product.owlCarousel({
+	  	items : 3, //10 items above 1000px browser width
+      	itemsDesktop : [1000,3], //5 items between 1000px and 901px
+      	itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+      	itemsTablet: [600,2], //2 items between 600 and 0;
+      	itemsMobile : [450, 1]// itemsMobile disabled - inherit from itemsTablet option
+      });
+
+      // Custom Navigation Events
+      $(".next").click(function(){
+        post.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        post.trigger('owl.prev');
+      })
+	  
+	  $(".next").click(function(){
+        product.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        product.trigger('owl.prev');
+      })
+     
+    });
+
+});
+</script> 
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+	<img class="img-head" src="img/header.png" class="img-responsive"/>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    			<div id="logo" class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        			<img src="img/logo.png" class="img-responsive" />
+        		</div>
+        		<!-- top menu-->
+    			<div class="col-lg-8 col-md-8 col-sm-7 col-xs-1">
+    				<nav class="navbar head-menu" role="navigation">
+  						<div class="container-fluid">
+    	    				<div class="navbar-header">
+      							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu">
+        							<span class="sr-only">Toggle navigation</span>
+        							<span class="icon-bar"></span>
+				        			<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>
+      							</button>
+     		    			</div>
+   
+  				 			<div class="collapse navbar-collapse col-sm-12  col-xs-12" id="top-menu">
+      							<ul class="nav navbar-nav">
+        							<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">COMPANY</a>
+										<ul class="dropdown-menu menu1" role="menu">
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Testimonials</a></li>
+											<li><a href="#">Career Opportunities</a></li>
+										</ul>
+									</li>
+        							<li><a href="#">PRODUCTS</a></li>
+                            		<li><a href="#">SERVICE</a></li>
+                            		<li><a href="#">Blog </a></li>
+                            		<li><a href="#">CONTACT US</a></li>        
+      							</ul>
+    						</div>
+  						</div>
+					</nav>
+        		</div>
+        		<div class="contact text-right col-lg-2 col-md-2 col-sm-3 col-xs-6">
+        			<p class="tel">866-955-7873</p>
+        			<p class="email"><a href="mailto:info@texaswatersolutions.net">info@texaswatersolutions.net</a></p>
+        		</div>
+			</div>
+		</div>
+    </div>
+</header>
+<div class="content">
+	<div class="container">
+        <div class="row">
+        	<div class="col-lg-12 col-md-12 col-sm-12 xol-xs-12 slider-block">
+	               	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    	<img src="img/slide.jpg" class="img-responsive slid-img"/>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    	<div class="quote-today col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                        	<img src="img/today.png" class="img-responsive"/>
+                            <a href="#">
+                            	<div class="buble-text">
+                            		<span>quick quote <br/> request one today</span>
+                            	</div>
+                            </a>
+                        </div>
+                        <div class="free-water col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                        	<img src="img/free-water.png" class="img-responsive"/>
+                            <a href="#">
+                            	<div class="buble-text">
+                            		<span>Free water test <br/> see what’s in your water</span>
+                            	</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="row">
+        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 water">
+            	<h2 class="text-center">Residential and Commercial Water Solutions</h2>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                	<img src="img/water.png" class="img-responsive"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                	<img src="img/options.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 water-questions">
+            	<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                	<h2>Understand your water</h2>
+                	<div id="accordion">
+                    	<h3 class="acc_trigger"><a href="#">Common issues and answers</a></h3> 
+						<div class="acc_container"> 
+							<div class="block"> 
+								<ul>
+                                	<li>Hard Water</li>
+                                    <li>Cloudy Water</li>
+                                    <li>Chlorine Taste and Smell</li>
+                                    <li>Tastes and Odors</li>
+                                    <li>Staining</li>
+                                    <li>Bacteria and Viruses</li>
+                                    <li>Scale</li>
+                                </ul>
+							</div> 
+						</div> 
+	
+						<h3 class="acc_trigger"><a href="#">The Importance of Water Testing</a></h3> 
+						<div class="acc_container"> 
+							<div class="block"> 
+                            	The Importance of Water Testing
+							</div> 
+						</div> 
+                        <h3 class="acc_trigger"><a href="#">Benefits of Better Water</a></h3> 
+						<div class="acc_container"> 
+							<div class="block"> 
+                            	Benefits of Better Water
+							</div> 
+						</div> 
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+                	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    	<h3>Residential Solutions</h3>
+                        <ul>
+                        	<li>Drinking Water Systems</li>
+                            <li>Water Softeners</li>
+                            <li>Problem Water Systems</li>
+                            <li>No Salt Filtration Systems</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    	<h3>Commercial Solutions</h3>
+                        <ul>
+                        	<li>Water Filtration</li>
+                            <li>Water Conditioners</li>
+                            <li>Reverse Osmosis Systems</li>
+                            <li>Hot Water Systems</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    	<img src="img/sing-up.png" class="img-responsive"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-lg-12 blog">
+            	<h3>WaTER Solutions blog</h3>
+            	<div id="casual-posts" class="owl-carousel owl-theme">
+  					<div class="item">
+                    	<img src="img/post1.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Drink better, live better</a>
+                        </div>
+                    </div>
+  					<div class="item">
+                    	<img src="img/post2.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Check out now much water you need!</a>
+                        </div>
+                    </div>
+  					<div class="item">
+                    	<img src="img/post3.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Water risk and opportunity: a matter of perspective</a>
+                        </div>
+                    </div>
+  					<div class="item">
+                    	<img src="img/post1.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Drink better, live better</a>
+                        </div>
+                    </div>
+  					<div class="item">
+                    	<img src="img/post2.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Check out now much water you need!</a>
+                        </div>
+                    </div>
+  					<div class="item">
+                    	<img src="img/post3.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Water risk and opportunity: a matter of perspective</a>
+                        </div>
+                    </div>
+  					<div class="item">
+                    	<img src="img/post1.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Drink better, live better</a>
+                        </div>
+                    </div>
+					<div class="item">
+                    	<img src="img/post2.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Check out now much water you need!</a>
+                        </div>
+                    </div>
+					<div class="item">
+                    	<img src="img/post3.png" class="img-responsive"/>
+                        <div class="description-posts">
+                        	<span class="date">June 15th, 2014</span><br/> 
+                            <a href="#">Water risk and opportunity: a matter of perspective</a>
+                        </div>
+                   </div>
+				</div>
+ 
+				<div class="customNavigation">
+					<a class="btn prev"><img src="img/arrow-left.png"/></a>
+  					<a class="btn next"><img src="img/arrow-right.png"/></a>
+				</div>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner">
+            	<img src="img/banner.png" class="img-responsive"/>
+			</div>
+		</div>
+        <div class="row">
+        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 product">
+            	<h2 class="text-center">Combination Filtration & Softener Systems</h2>
+                <div class="col-lg-offset-3 col-lg-6 col-md-offse-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+                	<img class="snake img-responsive" src="img/snake.png"/>
+                </div>
+                <div id="casual-product" class="owl-carousel owl-theme col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  					<div class="item">
+                    	<img src="img/product1.png"/>
+                        <span>
+		                	<h3>Clarius</h3>
+        		            <p>Green Solutions For Your Home and the </p>
+                        </span>
+                    </div>
+  					<div class="item">
+                    	<img src="img/product2.png"/>
+                         <span>
+		                	<h3>Terminator</h3>
+        		            <p>Only Stainless Steel Tank Certified by EPA</p>
+                        </span>
+                    </div>
+  					<div class="item">
+                    	<img src="img/product3.png"/>
+                        <span>
+                        	<h3>Micromax 6500</h3> 
+							<p>Nothing Beats Reverse Osmosis Purified Water</p>
+                        </span>
+                    </div>
+  					<div class="item">
+                    	<img src="img/product1.png"/>
+                        <span>
+		                	<h3>Clarius</h3>
+        		            <p>Green Solutions For Your Home and the </p>
+                        </span>
+                    </div>
+  					<div class="item">
+                    	<img src="img/product2.png"/>
+                         <span>
+		                	<h3>Terminator</h3>
+        		            <p>Only Stainless Steel Tank Certified by EPA</p>
+                        </span>
+                    </div>
+  					<div class="item">
+                    	<img src="img/product3.png"/>
+                        <span>
+                        	<h3>Micromax 6500</h3> 
+							<p>Nothing Beats Reverse Osmosis Purified Water</p>
+                        </span>
+                    </div>
+  					<div class="item">
+                    	<img src="img/product1.png"/>
+                        <span>
+		                	<h3>Clarius</h3>
+        		            <p>Green Solutions For Your Home and the </p>
+                        </span>
+                    </div>
+					<div class="item">
+                    	<img src="img/product2.png"/>
+                         <span>
+		                	<h3>Terminator</h3>
+        		            <p>Only Stainless Steel Tank Certified by EPA</p>
+                        </span>
+                    </div>
+					<div class="item">
+                    	<img src="img/product3.png"/>
+                        <span>
+                        	<h3>Micromax 6500</h3> 
+							<p>Nothing Beats Reverse Osmosis Purified Water</p>
+                        </span>
+                   </div>
+				</div>
+ 
+				<div class="customNavigation">
+					<a class="btn prev"><img src="img/arrow-left.png"/></a>
+  					<a class="btn next"><img src="img/arrow-right.png"/></a>
+				</div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 questions">
+            	<div class="col-lg-offset-2 col-lg-4 col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-5 col-xs-12">
+                	<div class="free-water-text">
+                    	<span>Request a free Water Test</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                	<div class="quick-quote">
+                    	Request a Quick Quote
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center">Shouldn't you know what's in your water? Why wait?</h2>
+            <div class="col-lg-offset-3 col-lg-6 col-md-offse-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12">
+               	<img class="snake img-responsive" src="img/snake.png"/>
+            </div>
+        </div>
+	</div>
+ </div>
+          <div class="footer-push"></div>
+ </div>
+ 
+ <footer>
+ 	<img src="img/footer.png" class="img-responsive img-foot"/>
+    <div class="container">
+        <div class="row">
+        	<div class="col-lg-12 col-md-12 col-sm-12">
+    		    <img src="img/blob.png" class="blob"/>
+    			<h4 class="foot-call text-center">Call us 866 955 7873</h4>
+    			<a class="call-online" href="#"><img src="img/operator.png"/></a>
+    			<nav class="foot-menu text-center">
+    				<a href="#">COMPANY</a>
+        			<a href="#">PRODUCTS</a>
+        			<a href="#">SERVICE</a>
+        			<a href="#">Blog </a>
+        			<a href="#">CONTACT US</a>
+    			</nav>
+    			<p class="copyright text-center">© TEXAS WATEr SOLUTIONS 2014.  All rights reserved. <a href="#">Privacy</a>, <a href="#">Terms of Use</a>, <a href="#">Disclaimer and Purchase Policy</a></p>
+    			<div class="social-icon text-center">
+                	<span>Follow Us!</span> 
+                    <a href="#"><div id="facebook"></div></a> 
+                    <a href="#"><div id="linked"></div></a> 
+                    <a href="#"><div id="youtube"></div></a> 
+                    <a href="#"><div id="green"></div></a> 
+                    <a href="#"><div id="bbc"></div></a>
+                </div>
+            </div>
+       </div>
+ </footer>
+</body>
+</html>

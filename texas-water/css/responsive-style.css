@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+@media (max-width: 991px){
+	.head-menu{
+		font-size: 14px;
+	}
+	#top-menu .navbar-nav > li > a{
+		padding: 8px 6px;
+	}
+	
+	#top-menu .navbar-nav > li > a:hover {
+		padding: 6px 6px;
+	}
+	
+	h2{
+		font-size: 36px;
+		}
+	.blog .description-posts{
+	min-height: 62px;
+	top: 30%;
+	right: 22px;
+	padding: 5px 8px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font-family: PTSans_Narrow_Bold;
+	width: 70%;
+	}
+	
+	.blog .description-posts .date{
+		font-size: 14px;
+	}
+	
+	.blog .description-posts a{
+		font-size: 14px;
+	}
+	
+	.blog .customNavigation .prev{
+  		left: 0px;
+  		top: 50%;
+  		margin-top: -19px; 
+	}
+ 
+	.blog .customNavigation .next{
+  		right: 0px;
+ 	 	top: 50%;
+  		margin-top: -19px; 
+	}
+}
+
+@media (max-width: 767px){
+        header{
+        	padding-bottom: 10px;
+	}
+	
+	#logo{
+		margin-right: 15px;
+	}
+	.contact{
+		margin-top: 20px;
+	}  
+
+	.head-menu{
+		margin-top: 20px;
+	}
+	
+	.quote-today, .free-water{
+		margin-top: 5px;
+		}
+	.quote-today{
+		padding-left: 0;
+		}
+	.quote-today > a .buble-text {
+		right: 0px;
+	}
+		
+	.slider-block .col-lg-8, 
+	.slider-block .col-md-8, 
+	.slider-block .col-sm-8 {
+		padding-right: 15px; 
+	}
+		
+	.slider-block .col-lg-4, 
+	.slider-block .col-md-4, 
+	.slider-block .col-sm-4 {
+		padding-left: 15px;
+	}	
+	
+	h2{
+		font-size: 28px;
+		margin-top: 30px;
+	}
+	
+	.free-water-text{
+		margin-bottom: 5px;
+		}
+		
+	.wrapper {
+		//padding-bottom: 520px;
+		margin: 0 0 -520px 0;
+	}
+	
+	footer, .footer-push {
+		height: 520px;
+	}
+	.buble-text{
+		padding: 4px;
+		font-size: 10px;
+		}
+		
+	.menu1{
+		background: none;
+		width: auto;
+		height: auto;
+		}
+	.navbar-collapse.in{
+		width: auto;
+		}
+
+	.contact .tel a {
+		font-size: 16px;
+		color: #ff7800;
+		margin-bottom: 0px;
+		}
+	.contact .email{
+		font-size: 12px;
+	}
+
+	.foot-menu a{
+		font-size: 14px;
+		white-spase: nowrap;
+	}
+
+	.foot-call a{
+    		font-family: PTSans_Narrow_Bold;
+    		font-size: 24px;
+    		color: #A4BD06;
+	}
+	
+	}
+

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Міст впав</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400' rel='stylesheet' type='text/css'>
+<link href="css/main.css" type="text/css" rel="stylesheet"/>
+<link href="css/lightbox.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="block-info description-one-news">
+	<div class="head-blok-info">
+    	<span>Міст впав</span> <span class="red-likes">33</span> <div class="close-info-block"/></div>
+	</div>
+	<div class="content-block-info">	
+    	<div class="image-row">
+			<div class="image-set">
+				<a class="example-image-link" href="img/img1.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="img/img1.jpg" alt=""/></a>
+				<a class="example-image-link" href="img/img1.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="img/img1.jpg" alt="" /></a>
+				<button class="new-photo-to-gallery"><img src="img/add-photo.png"/></button>
+			</div>
+		</div>
+        <p>Изношенность конструкций, вследствие чего возникла деформация опоры. Сам мост был построен в 1939 году, а ремонт опоры проводился с 1961 по 1963 год.</p>
+        <div class="address"><img src="img/metka.png" class="pull-left"/>ул. Одинцова, 24б</div>
+        <div class="date"><div class="pull-right"><img src="img/calendar.png"/>24 февраля, 15:34</div></div>
+        <hr/>
+        <button class="agree-button">Погодитися</button>
+        <button class="comment-button">Коментарі</button>
+        <div class="dropdown-btn">
+            <button class="share-button">Поділитися</button>
+            <div class="social-icon">
+                <button class="facebook-btn">Facebook</button>
+                <button class="twitter-btn">Twitter</button>
+                <button class="vk-btn">Вконтакте</button>
+            </div>
+         </div>
+        <button class="spam-button pull-right">Це спам</button>
+        <div id="hypercomments_widget"></div>
+			<script type="text/javascript">
+				_hcwp = window._hcwp || [];
+				_hcwp.push({widget:"Stream", widget_id: 28041});
+				(function() {
+					if("HC_LOAD_INIT" in window)return;
+					HC_LOAD_INIT = true;
+					var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+					var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+					hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/28041/"+lang+"/widget.js";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hcc, s.nextSibling);
+				})();
+			</script>
+			<a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
+	</div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+	$("#choice").change(function () {
+    if($(this).val() == "0") 
+		$(this).addClass("empty");
+    else 
+		$(this).removeClass("empty")
+	});
+	$("#choice").change();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+     font-family: GothamBold;
+     src: url('../fonts/GothamBold.eot'); /* IE9 */
+     src: url('../fonts/GothamBold.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/GothamBold.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/GothamBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/GothamBold.svg#svgGothamBold') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: GothamBlack;
+     src: url('../fonts/Gotham-Black.eot'); /* IE9 */
+     src: url('../fonts/Gotham-Black.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/Gotham-Black.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/Gotham-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Black.svg#svgGotham-Black') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: Gotham-Book;
+     src: url('../fonts/Gotham-Book.eot'); /* IE9 */
+     src: url('../fonts/Gotham-Book.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/Gotham-Book.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/Gotham-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Book.svg#svgGotham-Book') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: HelveticaNeueLTStd-Bold;
+     src: url('../fonts/HelveticaNeueLTStd-Bold.eot'); /* IE9 */
+     src: url('../fonts/HelveticaNeueLTStd-Bold.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/HelveticaNeueLTStd-Bold.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/HelveticaNeueLTStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/HelveticaNeueLTStd-Bold.svg#svgHelveticaNeueLTStd-Bold') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: HelveticaNeueLTStd-Roman;
+     src: url('../fonts/HelveticaNeueLTStd-Roman.eot'); /* IE9 */
+     src: url('../fonts/HelveticaNeueLTStd-Roman.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/HelveticaNeueLTStd-Roman.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/HelveticaNeueLTStd-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/HelveticaNeueLTStd-Roman.svg#svgHelveticaNeueLTStd-Roman') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: HelveticaNeue  src: local('Arial'); ;
+     src: url('../fonts/HelveticaNeue.eot'); /* IE9 */
+     src: url('../fonts/HelveticaNeue.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/gothamultraitalic.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/HelveticaNeue.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/HelveticaNeue.svg#svgHelveticaNeue') format('svg'); /* iOS */ 
+	 font-style:normal;
+	 font-weight: normal;
+}
+
+@font-face {
+     font-family: HelveticaNeue-Bold;
+     src: url('../fonts/HelveticaNeue-Bold.eot'); /* IE9 */
+     src: url('../fonts/HelveticaNeue-Bold.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/HelveticaNeue-Bold.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/HelveticaNeue-Bold.svg#svgHelveticaNeue-Bold') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: Gotham-Ultra;
+     src: url('../fonts/Gotham-Ultra.eot'); /* IE9 */
+     src: url('../fonts/Gotham-Ultra.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/Gotham-Ultra.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/Gotham-Ultra.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Ultra.svg#svgGotham-Ultra') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: Gotham-Medium;
+     src: url('../fonts/Gotham-Medium.eot'); /* IE9 */
+     src: url('../fonts/Gotham-Medium.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/Gotham-Medium.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Medium.svg#svgGotham-Medium') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: annie-btn;
+     src: url('../fonts/annie-btn.eot'); /* IE9 */
+     src: url('../fonts/annie-btn.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/annie-btn.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/annie-btn.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/annie-btn.svg#svgannie-btn') format('svg'); /* iOS */ 
+}
+

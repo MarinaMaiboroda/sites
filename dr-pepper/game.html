@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dr Pepper</title>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css"/>
+<link rel="stylesheet" href="css/fonts-families.css" type="text/css"/>
+<link rel="stylesheet" href="css/game.css" type="text/css"/>
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="http://jwpsrv.com/library/E+5UOPiTEeOUQyIAC0MJiQ.js"></script>
+<script src="js/turn.js" type="text/javascript"></script>
+<script src="js/wScratchPad.js" type="text/javascript"></script>
+<script src="js/hash.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="img-fon"><!-- image for background-->
+    	<img class="hidden-sm hidden-xs" src="img/fon-image.jpg" width="100%" />
+    </div>
+    <div class="page">
+		<header>
+        	<div class="container">
+            	<nav class="navbar pull-left" role="navigation"><!--top menu-->
+  					<div class="container-fluid pull-left">
+  					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-menu">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <div class="collapse navbar-collapse" id="top-menu">
+					      <ul class="nav navbar-nav">
+					        <li class="active"><a href="#">HOME</a></li>
+					        <li><a href="#">HOW-TO</a></li>
+					        <li><a href="#">PRIZES</a></li>
+					        <li><a href="#">OFFICIAL RULES</a></li>
+           					<li><a href="#">WINNERS</a></li>
+         			      </ul>
+   						</div>
+ 				    </div>
+				</nav>
+                <div class="pull-right language"><!--language button-->
+                	<a href="#">EN</a> | <a href="#">FR</a>
+                </div>
+	    	</div>
+        </header>
+        
+        <div class="container red-fon">
+        	<div class="game">
+            	<div class="row">
+                    <div class="col-lg-12">
+                         <div class="col-lg-3 col-md-3 col-sm-3">
+                            <img src="img/tution.png" class="img-responsive tution"/>
+                            <div class="grey-fon">
+                               <h3>How To Play:</h3>
+                                <ol>
+                                    <li><strong>Select</strong> 3 tiles on the game board  </li>
+                                    <li>If the <strong><span class="all-big">3 prize images match</span></strong>, you’ve won an instant prize! </li>
+                                        <ul>
+                                            <li>3 <strong>“$100”</strong> tiles = $100 Cash prize</li>
+                                            <li>3 <strong>“House of Marley Audio Systems”</strong> = House of Marley “Get Together” Bluetooth Audio System prize</li>
+                                            <li>3 <strong>“House of Marley Headphones”</strong> = House of Marley “Smile Jamaica” Headphones prize</li>
+                                         </ul>
+                                 </ol>
+                                 <p><strong>Note:</strong> You have 5 minutes to complete the game. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                        	<div id="flipbook">
+								<div class="hard titul"> </div>
+                                <div><!--even page-->
+                                	<div class="col-md-offset-2 col-md-10 lottery">
+                                    	<img src="img/match-win.jpg" class="img-responsive"/>
+                                    	<div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize1"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize2"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize3"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize4"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize5"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize6"></div></div>
+                                     </div>
+                                </div>
+                                <div><!--odd page-->
+                                	<div class="col-md-10 lottery">
+                                    	<p class="pull-right tbl"><span class="total">total entries <br/>this week</span> <span class="number">123</span></p>
+                                    	<div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize1"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize2"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize3"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize4"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize5"></div></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6"><div class="scratchpad prize6"></div></div>
+                                    </div>
+                                </div>
+								
+								
+                                </div>
+							</div>
+							<script language="JavaScript">
+								$("#flipbook").turn({
+									width: 732,
+									height: 517,
+									autoCenter: true,
+									acceleration: true,
+									display: "double"		
+								});
+								$("#flipbook").turn("next");
+							</script>
+                        
+                             
+    
+                         </div>
+                     </div>
+                </div>
+            </div>	
+		</div> 
+        <footer>
+        	<div class="container">
+                <nav class="foot-menu col-md-offset-3 col-md-9">
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">PRIVACY POLICY</a></li>
+                     <li><a href="#">TERMS OF USE</a></li>
+                     <li><a href="#">CONTACT US </a></li>
+                     <a href="#"><img src="img/share.png"/></a>
+                     <a href="#"><img src="img/facebook-icon.png"/></a>
+                </nav>
+              
+                <p class="text-center">†NO PURCHASE NECESSARY. Contest ends Oct 6/14 at 11:59:59 AM ET. <a class="blue-link" href="#">Click here</a> for rules/details, open to CDN residents, 18 yrs+. *Trademark used under license by Canada Dry Mott’s Inc. BOB MARLEY™  MARLEY™ © Fifty-Six Hope Road Music Ltd., 2011. Right of Publicity and Persona Rights - Fifty-Six Hope Road Music Ltd.</p>
+	    	</div>
+        </footer>
+		
+		    <!--Modal window-->
+    <div class="modal fade" id="modalWin" tabindex="-1" role="dialog" aria-hidden="true">
+    	<div class="modal-container">
+			<div class="modal-dialog fon-modal big-padding">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">Close <span class="close-simbol">&times;</span></span><span class="sr-only">Close</span></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<img src="img/headfons-win1.png" class="img-responsive pull-right"/><!--first headfons-->
+                               	<!--Congratulayions text-->
+                                <h3>Congratulations! </h3>
+								<p>You’ve correctly answered the skill-testing question. Your <strong>House of Marley "Smile Jamaica" Headphones</strong> will be shipped to you within the next 6 weeks.  </p>
+								<p>We’ll send you a confirmation email shortly, letting you know all the details about the delivery of your prize.  </p>
+								<p>Plus, your play has earned you one (1) entry into this week’s draw.  </p>
+                                <!--Sorry text-->
+                                <h3>Sorry, </h3>
+                                <p>you answered the skill-testing-question incorrectly, but your play has earned you one (1) entry into this week’s draw.</p>
+                                <!--Winner text-->
+                                <h3>Instant Winner!</h3>
+                                <p>Way to go! You’re eligible to win an instant prize of <strong>House of Marley "Smile Jamaica" Headphones.</strong> </p>
+                                <p>But first, you’ll have to correctly answer a mathematical skill-testing question:</p>
+                                <p>You have 15 minutes to submit your answer.</p>
+                                <p>Multiply 6 x 15; divide by 2; add 576; subtract 221 = ?</p>
+                                <p>My answer is: <input type="text" name="answer"/> <button class="button-red-small btn-small">Submit</button></p>
+                                <!--buttons-->
+                                <div class="col-md-4 text-center"><button class="button-red">ENTER ANOTHER PIN</button><p class="smaller">for a chance to WIN† Instant Prizes</p></div>
+                                <div class="col-md-4 text-center"><button class="button-red">SUBMIT A VIDEO</button><p class="smaller">for a chance to WIN† one of the Grand Prizes</p></div>
+                                <div class="col-md-4 text-center"><button class="button-red">VOTE FOR A VIDEO</button><p class="smaller">for your favourite video</p></div>
+							</div> 
+						</div>  
+					</div>
+				</div>	
+			</div>
+		</div>
+    </div>    
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </div>
+    <script type="text/javascript">
+	
+$('.prize1').wScratchPad({
+          bg: './img/headfons-win.png',
+          fg: './img/scretch.jpg',
+          'cursor': 'url("./cursors/coin.png") 5 5, default',
+               });
+			   
+	$('.prize2').wScratchPad({
+          bg: './img/audio-win.png',
+          fg: './img/scretch.jpg',
+          'cursor': 'url("./cursors/coin.png") 5 5, default',
+               });
+			   
+	$('.prize3').wScratchPad({
+          bg: './img/bottle-win.png',
+          fg: './img/scretch.jpg',
+          'cursor': 'url("./cursors/coin.png") 5 5, default',
+               });
+			   
+	$('.prize4').wScratchPad({
+          bg: './img/money-win.png',
+          fg: './img/scretch.jpg',
+          'cursor': 'url("./cursors/coin.png") 5 5, default',
+               });
+			   
+	$('.prize5').wScratchPad({
+          bg: './img/no-win.png',
+          fg: './img/scretch.jpg',
+          'cursor': 'url("./cursors/coin.png") 5 5, default',
+               });
+			   
+	$('.prize6').wScratchPad({
+          bg: './img/tin-win.png',
+          fg: './img/scretch.jpg',
+          'cursor': 'url("./cursors/coin.png") 5 5, default',
+               });
+
+
+       
+      </script>
+   
+        
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+     font-family: PTSans_ Narrow;
+     src: url('../fonts/PTSans_ Narrow.eot'); /* IE9 */
+     src: url('../fonts/PTSans_ Narrow.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/PTSans_ Narrow.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/PTSans_ Narrow.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/PTSans_ Narrow.svg#svgPTSans-Narrow') format('svg'); /* iOS */ 
+}
+
+@font-face {
+     font-family: PTSans_Narrow_Bold;
+     src: url('../fonts/PTSans_Narrow_Bold.eot'); /* IE9 */
+     src: url('../fonts/PTSans_Narrow_Bold.eot?') format('eot'),  /* IE6-IE8 */
+     url('../fonts/PTSans_Narrow_Bold.woff') format('woff'), /* Современные браузеры */
+     url('../fonts/PTSans_Narrow_Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/PTSans_Narrow_Bold.svg#svgPTSans-NarrowBold') format('svg'); /* iOS */ 
+}
+

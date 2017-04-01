@@ -1,0 +1,205 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+
+
+/* Global reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+*****************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.inline-block{
+	display:inline-block;
+	}
+	
+.div-center{
+	display:block;
+	width:auto;
+	margin:auto;
+	}
+	
+.under{
+	z-index:10 !important;
+	}
+	
+
+/* Extended base styles (site specific)
+*****************************************************************/
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+body {
+	background:url(../images/fon.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	line-height: 1.5;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Roboto Condensed', sans-serif !important;
+	font-weight:400;
+}
+
+img { 
+	display:block;
+	}
+p {
+	margin:1em 0;
+	}
+	
+nav.affix{
+	top:20px;
+	width: 15%;
+	}
+	
+nav.affix a{
+	color: #387bba;
+	font-size:16px;
+	display:block;
+	margin: 7px 0;
+	}
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {
+	position: relative;
+}
+
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content, .container, .text {
+	z-index: 5;
+	position: relative;
+	line-height: 1.7;
+	}
+/* midground (clouds) */
+#parallax-bird {
+	z-index: 1;
+	position: fixed;
+	right: 0; 
+	width: 100%;
+	}
+	#bird-1 {
+		position: absolute;
+		top: 300px;
+		right:10%;
+		}
+	#bird-2 {
+		position: absolute;
+		top: 1200px;
+		right:45%;
+		}
+	#bird-3 {
+		position: absolute;
+		top: 1600px;
+		left: 20%;
+		}
+	#bird-4 {
+		position: absolute;
+		top: 1700px;
+		right: 5%;
+		}
+		
+/* background (clouds) */
+#parallax-cloud {
+	z-index: 2;
+	position: fixed;
+	left: 0%; /* align left edge with center of viewport */
+	width: 100%;
+	}
+	#cloud-1 {
+		position: absolute;
+		top: 150px;
+		left: 0px;
+		}
+	#cloud-2 {
+		position: absolute;
+		top: 200px;
+		right: 0px;
+		}
+	#cloud-3 {
+		position: absolute;
+		top: 700px;
+		left: 15%;
+		}
+	#cloud-4 {
+		position: absolute;
+		top: 1400px;
+		right: 0px;
+		}
+	#cloud-5 {
+		position: absolute;
+		top: 1550px;
+		right: 0px;
+		}
+		
+	#cloud-6 {
+		position: absolute;
+		top: 2100px;
+		left: 20%;
+		}
+	
+	#cloud-7 {
+		position: absolute;
+		top: 1400px;
+		left: 0%;
+		}
+		
+	#cloud-8 {
+		position: absolute;
+		top: 2000px;
+		left: 35%;
+		}
+	
+	#cloud-9 {
+		position: absolute;
+		top: 2000px;
+		left: 0;
+	}

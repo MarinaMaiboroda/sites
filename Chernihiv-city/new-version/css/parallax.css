@@ -1,0 +1,128 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+body {
+	background:url(../images/fon.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	line-height: 1.5;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif !important;
+	font-weight:400;
+}
+
+img { 
+	display:block;
+	}
+p {
+	margin:1em 0;
+	}
+	
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {
+	position: relative;
+}
+
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content, .container, .text {
+	z-index: 5;
+	position: relative;
+	line-height: 1.7;
+	}
+/* midground (clouds) */
+#parallax-bird {
+	z-index: 1;
+	position: fixed;
+	right: 0; 
+	width: 100%;
+	}
+	#bird-1 {
+		position: absolute;
+		top: 300px;
+		right:10%;
+		}
+	#bird-2 {
+		position: absolute;
+		top: 1200px;
+		right:45%;
+		}
+	#bird-3 {
+		position: absolute;
+		top: 1600px;
+		left: 20%;
+		}
+	#bird-4 {
+		position: absolute;
+		top: 1700px;
+		right: 5%;
+		}
+		
+/* background (clouds) */
+#parallax-cloud {
+	z-index: 2;
+	position: fixed;
+	left: 0%; /* align left edge with center of viewport */
+	width: 100%;
+	}
+	#cloud-1 {
+		position: absolute;
+		top: 150px;
+		left: 0px;
+		}
+	#cloud-2 {
+		position: absolute;
+		top: 200px;
+		right: 0px;
+		}
+	#cloud-3 {
+		position: absolute;
+		top: 700px;
+		left: 15%;
+		}
+	#cloud-4 {
+		position: absolute;
+		top: 1400px;
+		right: 0px;
+		}
+	#cloud-5 {
+		position: absolute;
+		top: 1550px;
+		right: 0px;
+		}
+		
+	#cloud-6 {
+		position: absolute;
+		top: 2100px;
+		left: 20%;
+		}
+	
+	#cloud-7 {
+		position: absolute;
+		top: 1400px;
+		left: 0%;
+		}
+		
+	#cloud-8 {
+		position: absolute;
+		top: 2000px;
+		left: 35%;
+		}
+	
+	#cloud-9 {
+		position: absolute;
+		top: 2000px;
+		left: 0;
+	}

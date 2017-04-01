@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>Chernihiv city</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="A parallax scrolling experiment using jQuery" />
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" media="all" href="css/main.css"/>
+        <link rel="stylesheet" href="css/jquery.fullPage.css" media="all"/>
+        <link rel="stylesheet" media="all" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
+        <link rel="stylesheet" media="all" href="css/owl.theme.css" />
+
+		<script src="js/modernizr.custom.37797.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/jquery.plaxmove.js"></script>
+        <script src="js/jquery.fullPage.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth'],
+					afterLoad: function(anchorLink, index){
+						if(index == 2){
+							$('#bg1').delay(200).animate({
+									opacity: '1',
+									transform: 'scale(.7)'									
+									}, 800, 'easeInQuad');							
+							$("#bg2").delay(300).animate({
+									opacity: '1',
+									transform: 'scale(.7)'									
+									}, 800, 'easeInQuad');	
+							}
+						if(index == 3){
+							$("#bg3-1").addClass('animated slideInLeft');
+							$("#bg3-2").addClass('animated slideInLeft');
+							}
+						if(index == 4){
+							$("#bg4").addClass('animated slideInRight');
+							}
+							
+						if(index == 5){
+							$("#bg5-1").addClass('animated slideInLeft');
+							$("#bg5-2").addClass('animated slideInLeft');
+							}
+							
+						if(index == 6){
+							$("#bg6").addClass('animated slideInRight');
+							}
+					}
+				});
+				
+				var owl = $("#our-team");
+ 
+				owl.owlCarousel({
+					items : 3, //10 items above 1000px browser width
+					itemsDesktop : [1000,3], //5 items between 1000px and 901px
+					itemsDesktopSmall : [900,3], // betweem 900px and 601px
+					itemsTablet: [800,2], //2 items between 600 and 0
+					itemsMobile : [600,1] // itemsMobile disabled - inherit from itemsTablet option
+				  });
+	 
+				  // Custom Navigation Events
+				  $(".next").click(function(){
+					owl.trigger('owl.next');
+				  })
+				  $(".prev").click(function(){
+					owl.trigger('owl.prev');
+				  })	
+					
+
+				$('a.next').click(function(){
+					var new_active = $(this).parents('.section.active').next();
+					$(this).parents('.section.active').removeClass('active').next().addClass('active');
+					var offset = new_active.position();
+					console.log(offset.top)
+					$('#fp-nav').find('a.active').removeClass('active').parent('li').next().children('a').addClass('active');
+					$('html, body').animate({
+						scrollTop: offset.top
+						});
+					return false;
+				});
+			});
+			
+			$(function(){
+				$('#bg3-1').plaxmove({ratioH:0.02,ratioV:0.0});
+				$('#bg3-2').plaxmove({ratioH:0.1,ratioV:0.0});
+				$('#bg5-1').plaxmove({ratioH:0.02,ratioV:0.0});
+				$('#bg5-2').plaxmove({ratioH:0.2,ratioV:0.05});
+
+			});
+			
+		</script>
+
+	</head>
+
+	<body>
+        <div id="fullpage">
+        	<div class="section " id="section0">
+            	<div class="container">
+					<div class="row">
+                    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        	<div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-offset-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                            	<img id="logo" src="images/logo.png" class="img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        	<h1>«Чернігiв - місто для людей!»</h1>
+                            <ul class="social-icon">
+                            	<li><img src="images/vk.png"/></li>
+                                <li><img src="images/fb.png"/></li>
+                                <li><img src="images/tw.png"/></li>
+                                <li><img src="images/od.png"/></li>
+                                <li><img src="images/google.png"/></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        	<button>Приєднуйся!</button>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+			
+        	<div class="section" id="section1">
+            	<div class="container">
+                	 <div class="row">
+                    	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+		                	<img id="name-1" class="img-responsive" src="images/small-logo.png"/>
+                        </div>
+                    </div>
+                     <div class="row">
+                    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 display-table">
+                        	<div class="col-lg-4 col-md-4 hidden-sm hidden-xs display-table-cell">
+			                    <img id="bg1" class="img-responsive" src="images/img-1.png"  alt="Montgolfier hot air balloon"/>
+            				</div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 display-table-cell" style="vertical-align: middle;">            
+			                    <article id="first-slide">
+									<header>
+										<h3>Стратегічні пріоритети програми дій «Чернігв - місто яким ми пишатимемося!»:</h3>
+									</header>								
+                        			<p><strong>Чернігів</strong> - величне місто з понад 1300 річною історією, сталий розвиток якого забезпечується сильною громадою та ефективною системою управління. Чернігів - місто для людей, в якому комфортно, цікаво та безпечно жити, працювати та відпочивати. Чернігів - відкритий для інвесторів та туристів. Місто приділяє значну увагу енергозбереженню, розвитку альтернативної енергетики, екології та охороні навколишнього середовища. </p>
+                                    <a class="blue button" href="https://docs.google.com/a/tcgsi.com/forms/d/1UMHz9xbt4uril2kK4KclCQX0ZSy7wzxOqHaSXYC1u2I/viewform?c=0&w=1" target="_blank" id="btn-1">Приєднуйся!</a>
+                    			</article>
+                            </div>
+                         </div>
+                     </div>
+        
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 display-table" style="margin-top: -5%;">
+                        	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 display-table-cell" style="vertical-align: middle;">  
+								<article id="second-slide">	
+									<header>
+										<h3>Чернігів - місто для людей</h3>
+									</header>								
+                                    <p>Головне завдання Стратегії розвитку - перетворити Чернігів на зручне, безпечне, чисте, комфортне місто, в якому зручно жити його мешканцям різного віку та достатку. Місто з якісними громадськими просторами, з повагою до дитини, пенсіонера, людини з обмеженими можливостями, учасника АТО, пішохода та велосипедиста. Місто з якісним громадським транспортом та високими стандартами в сфері ЖКГ. В Чернігові будуть розвиватися арт-простори, збільшиться кількість можливостей для самореалізації молоді та місць для організації дозвілля, підвищиться якість освіти та медицини.<a href="">Читати далі...</a></p>
+                                    <nav class="next-prev">
+                                        <a class="next" href="#">Next</a>
+                                    </nav>
+                                </article>
+                            </div>
+                            <div class="col-lg-4 col-md-4 hidden-sm hidden-xs display-table-cell">       
+								<img class="img-responsive" id="bg2" src="images/img-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+			
+            <div class="section" id="section2">
+            	<div class="container">
+                	 <div class="row">
+                    	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+            				<img id="name-2" class="img-responsive" src="images/small-logo.png"/>
+                        </div>
+                     </div>
+                </div>
+				<div class="row">
+                   	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       	<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">  
+                			<img id="bg3-1" class="img-responsive" src="images/img-3-1.png"/>
+				            <img id="bg3-2" class="img-responsive" src="images/img-3-2.png"/>
+                			<img id="cloud-bg-3" class="img-responsive" src="images/cloud-for-3.png"/>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">  
+                            <article id="third-slide">
+                                <header>
+                                    <h1>Чернігів - відкрите місто з працюючою економікою</h1>
+                                </header>
+                                <p>Джерело розвитку міста - залучення нових коштів через працюючу промисловість та сферу послуг, збільшення реалізації продукції місцевих виробників на внутрішньому ринку та різні типи туризму (діловий, подієвий), відкритість для інвесторів через створення сприятливих умов та прозорі тендери й аукціони, конкуренція на ринку послуг (в тому числі, в сфері ЖКГ). Влада міста активно працює з міжнародними організаціями з метою залучення додаткових коштів у вигляді грантів та кредитів на вигідних умовах для реалізації проектів розвитку.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <!--<h3>Стратегічні цілі</h3>
+                                            <ul class="line">
+                                                <li>Якісний громадський транспорт (нова транспортна стратегія з використанням інновацій та світових практик; розвиток тролейбусного управління з можливою зміною форми власності підприємства, з обов’язковою часткою міста 50%+; зміна маршрутів; пріоритет тролейбусу, а потім автобусам великої та середньої місткості; жорсткі вимоги до перевізників та контроль за їх роботою; розвиток мережі зупинок громадського транспорту: безпечні, зручні, інформативні; запровадження електронного квитка та єдиного квитка на всі види транспорту (багаторазового та одноразового використання).</li>
+                                                <li>Розвиток ОСББ.</li>
+                                                <li>Розвиток велосипедної інфраструктури</li>
+                                                <li>Чернігів - місто дружнє до дитини</li>
+                                                <li>Соціально-економічні та програми реабілітації і підтримки воїнів АТО</li>
+                                            </ul>-->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <!--<h3>Відповідальність (показники ефективності):</h3>
+                                            <ul class="line">
+                                                <li>Розробка, прийняття та впровадження транспортної стратегії Чернігова з новими маршрутами та пріоритетом для тролейбусу на дорозі.</li>
+                                                <li>Кількість автобусів великої та середньої місткості, що у вийнятковому технічному стані обслуговують клієнтів.</li>
+                                                <li>Кількість зупинок громадського транспорту нового зразка.</li>
+                                                <li>Чернігів - місто дружнє до дитини</li>
+                                                <li>Соціально-економічні та програми реабілітації і підтримки воїнів АТО</li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <a class="blue button" href="https://docs.google.com/a/tcgsi.com/forms/d/1UMHz9xbt4uril2kK4KclCQX0ZSy7wzxOqHaSXYC1u2I/viewform?c=0&w=1" target="_blank">Приєднуйся!</a>
+                                    </div>
+                                </div>
+                                <nav class="next-prev">
+                                    <a class="next" href="#">Next</a>
+                                </nav>
+                            </article>
+                        </div>
+                    </div>
+				</div>
+            </div>
+			
+            <div class="section" id="section3">
+            	<div class="container">
+                	 <div class="row">
+                    	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+							<img id="name-3" class="img-responsive"  src="images/small-logo.png"/>
+                        </div>
+                     </div>
+                </div>
+                <div class="row">
+                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		                <div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <article id="fourth-slide">
+                                <header>
+                                    <h1>Потужна громада Чернігова забезпечить його сталий розвиток</h1>
+                                </header>
+                                <p>Суб’єкт усіх перетворень в місті - його мешканці. Тільки сильна та згуртована громада може користуватися можливостями місцевого самоврядування та сповна реалізувати свій економічний, творчий, політичний потенціал. Активна громада - рушійна сила контролю за владою, яка стимулює її роботу, не дає красти, зупинятися на місці та реалізовувати неправильні проекти. Ключом до позитивних перетворень у місті є локальні ініціативи його мешканців у різних сферах: саме вони здатні швидко виявити проблему, звернути на її увагу та запропонувати варіанти вирішення. Участь чернігівців в реалізації міських проектів сприятиме усвідомленню ними себе членами великої громади та формуванню міської ідентичності. Влада усвідомлює необхідність працювати відкрито, звітуватися перед містянами, обговорювати важливі проекти, запровадити електронне врядування, проекти Smart Sity та сучасні механізми зворотнього зв’язку в системі управління містом. Чернігів буде розвивати та підтримувати ініціативу та відповідальність містян, їх активну участь в громадському житті.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <!--<h3>Стратегічні цілі</h3>
+                                            <ul class="line">
+                                                <li>Якісний громадський транспорт.</li>
+                                                <li>Розвиток ОСББ.</li>
+                                                <li>Розвиток велосипедної інфраструктури</li>
+                                                <li>Чернігів - місто дружнє до дитини</li>
+                                                <li>Соціально-економічні та програми реабілітації і підтримки воїнів АТО</li>
+                                            </ul>-->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <!--<h3>Відповідальність</h3>
+                                            <ul class="line">
+                                                <li>Якісний громадський транспорт</li>
+                                                <li>Розвиток ОСББ.</li>
+                                                <li>Розвиток велосипедної інфраструктури</li>
+                                                <li>Чернігів - місто дружнє до дитини</li>
+                                                <li>Соціально-економічні та програми реабілітації і підтримки воїнів АТО</li>
+                                            </ul>-->
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <a class="blue button" href="https://docs.google.com/a/tcgsi.com/forms/d/1UMHz9xbt4uril2kK4KclCQX0ZSy7wzxOqHaSXYC1u2I/viewform?c=0&w=1" target="_blank">Приєднуйся!</a>
+                                    </div>
+                                </div>
+                                <nav class="next-prev">
+                                    <a class="next" href="#">Next</a>
+                                </nav>
+                            </article>	
+                        </div>				
+						<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">  
+							<img id="bg4" class="img-responsive" src="images/img-4.png"/>
+							<img id="cloud-bg-4" class="img-responsive" src="images/cloud-for-4.png"/>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+			
+			<div class="section" id="section4">
+            	<div class="container">
+                	 <div class="row">
+                    	  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+            				<img id="name-4" class="img-responsive" src="images/small-logo.png"/>
+                        </div>
+                     </div>
+                </div>
+				<div class="row">
+                   	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       	<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">  
+                			<img id="bg5-1" class="img-responsive" src="images/img-5-1.png"/>
+				            <img id="bg5-2" class="img-responsive" src="images/img-5-2.png"/>
+                			<img id="cloud-bg-5" class="img-responsive" src="images/cloud-for-5.png"/>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">  
+                            <article id="third-slide">
+                                <header>
+                                    <h1>Чернігв - ощадливе та інноваційне місто</h1>
+                                </header>
+                                <p>В місті впроваджуються програми енергозбереження, ведеться жорсткий контроль за витрачанням та економія бюджетних коштів, реалізовуються екологічні програми. Місто використовує найкращі досвіди та впроваджує сучасні системи управління та інновації в сферах медицини, освіти, ЖКГ, безпеки тощо. Місто використовує нестандартні методи для стимулювання економії ресурсів його мешканцями (ігри, конкурси тощо).</p>
+                                <div class="row">
+                                    <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <h3>Стратегічні цілі</h3>
+                                            <ul class="line">
+                                                <li>Якісний громадський транспорт.</li>
+                                                <li>Розвиток ОСББ.</li>
+                                                <li>Розвиток велосипедної інфраструктури</li>
+                                                <li>Чернігів - місто дружнє до дитини</li>
+                                                <li>Соціально-економічні та програми реабілітації і підтримки воїнів АТО</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <h3>Відповідальність</h3>
+                                            <ul class="line">
+                                                <li>Якісний громадський транспорт</li>
+                                                <li>Розвиток ОСББ.</li>
+                                                <li>Розвиток велосипедної інфраструктури</li>
+                                                <li>Чернігів - місто дружнє до дитини</li>
+                                                <li>Соціально-економічні та програми реабілітації і підтримки воїнів АТО</li>
+                                            </ul>
+                                        </div>
+                                    </div>-->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <a class="blue button" href="https://docs.google.com/a/tcgsi.com/forms/d/1UMHz9xbt4uril2kK4KclCQX0ZSy7wzxOqHaSXYC1u2I/viewform?c=0&w=1" target="_blank">Приєднуйся!</a>
+                                    </div>
+                                </div>
+                                <nav class="next-prev">
+                                    <a class="next" href="#">Next</a>
+                                </nav>
+                            </article>
+                        </div>
+                    </div>
+				</div>
+            </div>
+			
+			<div class="section" id="section5">
+            	<div class="container">
+                	 <div class="row">
+                    	<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+							<img id="name-5" class="img-responsive" src="images/small-logo.png"/>
+                        </div>
+                     </div>
+                </div>
+                <div class="row">
+                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		                <div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <article id="fourth-slide">
+                                <header>
+                                    <h1>Чернігів - центр туризму Лівобережної України.</h1>
+                                </header>
+                                <p>Близькість міста до Києва, природні умови, здорожчання відпочинку за кордоном створюють ідеальні умови для розвитку зеленого туризму в Чернігові та поблизу міста. Зручне транспортне сполучення з Києвом, але значно нижча ціна на послуги повинні створити поштовх для розвитку ділового та економічного туризму. Цікавий і насичений подієвий календар, разом із розвитком туристичної інфраструктури мають заохотити білоруських туристів лишатися в Чернігові на ніч, що залучить в економіку міста додаткові кошти. Велична історія Чернігова має стати магнітом для туристів з усієї України в період розвитку внутрішнього туризму. Влада міста усвідомлює, що конкурувати зі Львовом чи Одесою по кількості туристів Чернігів не зможе, але місто має бути більш привабливим та відомішим в Україні ніж Житомир, Черкаси та інші міста, розташовані неподалік від Києва.</p>
+                                <div class="row">                         
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <a class="blue button" href="https://docs.google.com/a/tcgsi.com/forms/d/1UMHz9xbt4uril2kK4KclCQX0ZSy7wzxOqHaSXYC1u2I/viewform?c=0&w=1" target="_blank">Приєднуйся!</a>
+                                    </div>
+                                </div>
+                                <nav class="next-prev">
+                                    <a class="next" href="#">Next</a>
+                                </nav>
+                            </article>	
+                        </div>				
+						<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">  
+							<img id="bg6" class="img-responsive" src="images/img-6.png"/>
+							<img id="cloud-bg-6" class="img-responsive" src="images/cloud-for-6.png"/>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+			
+			<div class="section" id="section6">
+            	<div class="container">
+		<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                    <img class="img-responsive" id="name-6" src="images/small-logo.png"/>
+</div></div>
+                    <article id="seventh-slide" class="text-center">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2>Ми команда прогресивної молоді, яка прагне змінити місто!</h2>
+                                <p>Величне місто з понад 1300 річною історією, сталий розвиток  місто завдячує своїм жителям забезпечується сильною громадою та ефективною системою громадою та місто завдячує своїм управління. Розвитку місто завдячує своїм жителям, та врівноваженій місто завдячує</p>
+                            </div>
+                        </div>
+                        <div id="our-team" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/photo-1.png" class="img-responsive"/>
+                                <div class="about">
+                                    <h3>Самострова Анастасія</h3>
+                                    <i>викладач в ЧНТУ</i>
+                                    <p>« Я завжди переймалась проблемами мого міста в якому народилась. Вірю що наша команда зможе змінити все накраще. Я звикла до постійних змін у своєму житті. Розумію як і що треба робити. »</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/photo-2.png" class="img-responsive" />
+                                <div class="about">
+                                    <h3>Самострова Анастасія</h3>
+                                    <i>викладач в ЧНТУ</i>
+                                    <p>« Я завжди переймалась проблемами мого міста в якому народилась. Вірю що наша команда зможе змінити все накраще. Я звикла до постійних змін у своєму житті. Розумію як і що треба робити. »</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/photo-3.png" class="img-responsive"/>
+                                <div class="about">
+                                    <h3>Самострова Анастасія</h3>
+                                    <i>викладач в ЧНТУ</i>
+                                    <p>« Я завжди переймалась проблемами мого міста в якому народилась. Вірю що наша команда зможе змінити все накраще. Я звикла до постійних змін у своєму житті. Розумію як і що треба робити. »</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/photo-1.png" class="img-responsive"/>
+                                <div class="about">
+                                    <h3>Самострова Анастасія</h3>
+                                    <i>викладач в ЧНТУ</i>
+                                    <p>« Я завжди переймалась проблемами мого міста в якому народилась. Вірю що наша команда зможе змінити все накраще. Я звикла до постійних змін у своєму житті. Розумію як і що треба робити. »</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/photo-2.png" class="img-responsive" />
+                                <div class="about">
+                                    <h3>Самострова Анастасія</h3>
+                                    <i>викладач в ЧНТУ</i>
+                                    <p>« Я завжди переймалась проблемами мого міста в якому народилась. Вірю що наша команда зможе змінити все накраще. Я звикла до постійних змін у своєму житті. Розумію як і що треба робити. »</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/photo-3.png" class="img-responsive"/>
+                                <div class="about">
+                                    <h3>Самострова Анастасія</h3>
+                                    <i>викладач в ЧНТУ</i>
+                                    <p>« Я завжди переймалась проблемами мого міста в якому народилась. Вірю що наша команда зможе змінити все накраще. Я звикла до постійних змін у своєму житті. Розумію як і що треба робити. »</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customNavigation">
+                            <a class="btn prev">Previous</a>
+                            <a class="btn next">Next</a>
+                        </div>
+                        <a  class="blue button">Долучайся до команди</a>
+                                            </div>
+				</article>
+            </div>
+			
+            <div class="section" id="section7">
+            	<div class="green-bg">
+		<div class="container">
+			<div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+                                <h2>Ми створили постійно діючу візуальну онлайн-карту для ідей з покращення міста.</h2>
+                            </div>
+                        </div>
+					<button>Запропонуй свою ідею!</button>
+</div>
+				</div>
+            
+				<div class="white-bg">
+					 <div class="container">
+
+					        <div class="row">
+                    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        	<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-6 col-md-6 col-sm-8 col-xs-8">
+						<img src="images/small-logo.png" class="div-center"/>
+</div>
+</div></div>
+						<ul class="social-icon bottom-icon">
+							<li><img src="images/fb-icon.png"/></li>
+							<li><img src="images/vk-icon.png"/></li>
+							<li><img src="images/tw-icon.png"/></li>                           
+						 </ul>	
+						 <div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+								<h2>Не залишайся осторонь проблем свого міста. Допоможи зробити його краще!</h2>
+							</div>
+						 </div>
+					</div>
+				</div>
+            </div>
+			
+   		</div>
+	</body>
+</html>

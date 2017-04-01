@@ -1,0 +1,228 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+body {
+	background:url(../images/fon.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	line-height: 1.5;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif !important;
+	font-weight:400;
+}
+
+img { 
+	display:block;
+	}
+p {
+	margin:1em 0;
+	}
+	
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {
+	position: relative;
+}
+
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content, .container, .text {
+	z-index: 5;
+	position: relative;
+	line-height: 1.7;
+	}
+/* midground (clouds) */
+#parallax-bird {
+	z-index: 1;
+	position: fixed;
+	right: 0; 
+	width: 100%;
+	}
+	#bird-1 {
+		position: absolute;
+		top: 300px;
+		right:10%;
+		}
+	#bird-2 {
+		position: absolute;
+		top: 1200px;
+		right:45%;
+		}
+	#bird-3 {
+		position: absolute;
+		top: 1600px;
+		left: 20%;
+		}
+	#bird-4 {
+		position: absolute;
+		top: 1700px;
+		right: 5%;
+		}
+		
+/* background (clouds) */
+#parallax-cloud {
+	z-index: 2;
+	position: fixed;
+	left: 0%; /* align left edge with center of viewport */
+	width: 100%;
+	}
+	#cloud-1 {
+		position: absolute;
+		top: 150px;
+		left: 0px;
+		}
+	#cloud-2 {
+		position: absolute;
+		top: 200px;
+		right: 0px;
+		}
+	#cloud-3 {
+		position: absolute;
+		top: 700px;
+		left: 15%;
+		}
+	#cloud-4 {
+		position: absolute;
+		top: 1400px;
+		right: 0px;
+		}
+	#cloud-5 {
+		position: absolute;
+		top: 1550px;
+		right: 0px;
+		}
+		
+	#cloud-6 {
+		position: absolute;
+		top: 2100px;
+		left: 20%;
+		}
+	
+	#cloud-7 {
+		position: absolute;
+		top: 1400px;
+		left: 0%;
+		}
+		
+	#cloud-8 {
+		position: absolute;
+		top: 2000px;
+		left: 35%;
+		}
+	
+	#cloud-9 {
+		position: absolute;
+		top: 2000px;
+		left: 0;
+	}
+    
+/*Styles for Content Images*/
+    
+ #section-images-1,  #section-images-2, #section-images-3, #section-images-4, #section-images-5, #section-images-6, #section-images-7, #section-images-8, #section-images-9{
+	z-index: 3;
+	position: fixed;
+	left: 0%; 
+	width: 100%;
+	}
+	#section-img1 {
+		position: absolute;
+		//top: 480px;
+		left: 0px;
+        width: 30%;      
+		}
+    #section-img2 {
+        position: absolute;
+		//top: 100px;
+		right: 2%;
+        width: 10%;
+		}
+    #section-img3 {
+        position: absolute;
+		//top: 2400px;
+		left: 0;
+        width: 30%;
+		}
+    #section-img4 {
+		position: absolute;
+		//top: 1650px;
+		right: 0px;
+        width: 17%;        
+		}
+    #section-img5 {
+        position: absolute;
+		//top: 3200px;
+		right: 0px;
+        width: 18%;
+		}
+    #section-img6 {
+        position: absolute;
+		//top: 4100px;
+		left: 0px;
+        width: 27%;
+		}
+    #section-img7 {
+        position: absolute;
+		//top: 3400px;
+		right: 5%;
+        width: 5%;
+		}
+    #section-img8 {
+        position: absolute;
+		//top: 4900px;
+		right: 0px;
+        width: 12%;
+		}
+    #section-img9 {
+        position: absolute;
+		//top: 5600px;
+		right: 0px;
+        width: 14%;
+		}
+    
+   
+
+@media (min-width:1600px) and (max-width: 1919px){
+    #section-img4{ width: 14%; }        
+
+    #section-img5{ width: 17%; }
+     
+}
+
+@media (min-width:1400px) and (max-width: 1599px){
+    .main-content{ width: 65%; }
+    
+    #section-img4{ width: 16%; }
+    
+    #section-img5{ width: 15%; }
+}
+        
+@media (min-width:1200px) and (max-width: 1399px){
+    .main-content{ width: 60%; }
+    
+    #section-img4{ width: 16%; }
+    
+    #section-img5{ width: 18%; }
+}
+        
+@media (max-width: 1199px){
+     #section-images-1,  #section-images-2, #section-images-3, #section-images-4, #section-images-5, #section-images-6, #section-images-7, #section-images-8, #section-images-9{
+        display: none;
+     } 
+     
+     #section-images-1 img,  #section-images-2 img, #section-images-3 img, #section-images-4 img, #section-images-5 img, #section-images-6 img, 
+     #section-images-7 img, #section-images-8 img, #section-images-9 img{ width: 0; height: 0; opacity: 0;}
+}
+
+/*End Styles for Content Images*/ 
+ 
